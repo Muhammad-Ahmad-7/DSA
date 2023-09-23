@@ -29,7 +29,7 @@ class InfixToPostFix {
     String postFix = "";
 
     void checkOperandAndOperator(char i) {
-        if (Character.isLetter(i)) {
+        if (Character.isDigit(i)) {
             postFix = postFix + i;
         } else if (i == '(') {
             stack.push('(');
@@ -74,7 +74,7 @@ class InfixToPostFix {
 public class Main {
     public static void main(String[] args) {
         InfixToPostFix infixToPostFix = new InfixToPostFix();
-        String convert = infixToPostFix.convert("(A*B)+((B+C)/D)");
+        String convert = infixToPostFix.convert("12345+5*3/9+");
         System.out.println(convert);
     }
 }
