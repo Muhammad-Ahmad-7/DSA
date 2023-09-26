@@ -63,7 +63,7 @@ class InfixToPostFix {
         for (int i = 0; i < infix.length(); i++) {
             checkOperandAndOperator(infix.charAt(i));
         }
-        // Pop any remaining stack from the stack
+        // Pop any remaining element from the stack
         while (!stack.isEmpty()) {
             postFix = postFix + stack.pop();
         }
