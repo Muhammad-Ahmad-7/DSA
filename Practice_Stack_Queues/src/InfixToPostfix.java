@@ -54,7 +54,9 @@ public class InfixToPostfix {
 
     public static void main(String[] args) {
         InfixToPostfix infixToPostfix = new InfixToPostfix();
-        String postFixExpreString = infixToPostfix.convertToPostFix("((A+B)*C-D)/(E+F)");
+        String postFixExpreString = infixToPostfix.convertToPostFix("((a+b) * c - (d-e))/(f+g)");
         System.out.println(postFixExpreString);
     }
+    // ab+c*de--fg+/
+    // 12+3*6+23+/
 }
