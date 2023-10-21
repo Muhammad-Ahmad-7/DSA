@@ -21,6 +21,10 @@ public class DoublyList {
         head = node;
     }
 
+    public void insert() {
+
+    }
+
     public void insertLast(int val) {
         Node node = new Node(val);
         Node lastNode = this.lastNode();
